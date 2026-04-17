@@ -27,17 +27,17 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="text-[#E4DFD3]">
         <h3>info</h3>
         <p>about us</p>
         <p>events</p>
       </div>
-      <div>
+      <div className="text-[#E4DFD3]">
         <h3>help</h3>
         <p>terms and conditions</p>
         <p>privacy policy</p>
       </div>
-      <div>
+      <div className="text-[#E4DFD3]">
         <h3>contact</h3>
         <div className="flex">
           <FiPhone></FiPhone>

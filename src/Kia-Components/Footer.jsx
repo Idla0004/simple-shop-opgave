@@ -5,12 +5,26 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <section className="grid grid-cols-1">
+    <section className="flex justify-evenly bg-[#2D2D2D] py-20">
       <div className="logo-and-icons">
-        <img src="/img/KOEBblue.png" alt="" />
-        <div className="flex justify-between">
-          <FaFacebookF></FaFacebookF>
-          <FaInstagram></FaInstagram>
+        <img
+          src="/img/KOEBblue.png"
+          alt=""
+          className="max-w-20"
+        />
+        <div className="flex justify-between my-4">
+          <div className="bg-[#99D2DF] p-1 rounded-full">
+            <FaFacebookF
+              size={25}
+              color="#2D2D2D"
+            ></FaFacebookF>
+          </div>
+          <div className="bg-[#99D2DF] p-1 rounded-full">
+            <FaInstagram
+              size={25}
+              color="#2D2D2D"
+            ></FaInstagram>
+          </div>
         </div>
       </div>
       <div className="">

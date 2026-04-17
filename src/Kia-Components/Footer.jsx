@@ -1,11 +1,16 @@
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
+import { FiMail } from "react-icons/fi";
+import { FiPhone } from "react-icons/fi";
+
 const Footer = () => {
   return (
     <section className="grid grid-cols-1">
       <div className="logo-and-icons">
-        <img src="" alt="" />
+        <img src="/img/KOEBblue.png" alt="" />
         <div className="flex justify-between">
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <FaFacebookF></FaFacebookF>
+          <FaInstagram></FaInstagram>
         </div>
       </div>
       <div className="">
@@ -21,11 +26,11 @@ const Footer = () => {
       <div>
         <h3>contact</h3>
         <div className="flex">
-          <img src="" alt="" />
+          <FiPhone></FiPhone>
           <p>+45 88 66 44 22</p>
         </div>
         <div className="flex">
-          <img src="" alt="" />
+          <FiMail></FiMail>
           <p>koeb@email.com</p>
         </div>
       </div>

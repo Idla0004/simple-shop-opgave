@@ -3,15 +3,22 @@
 :root {
   --primary-light: #e4dfd3;
   --primary-dark: #2d2d2d;
-  --color-blue: #99d2df;
-  --color-light-grey: #d0cfcb;
-  --color-dark-grey: #6f6f78;
-  --color-dark-pink: #630850;
+  --blue: #99d2df;
+  --light-grey: #d0cfcb;
+  --dark-grey: #6f6f78;
+  --dark-pink: #630850;
 }
 
 @theme inline {
   --color-background: var(--primary-light);
   --color-foreground: var(--primary-dark);
+  --color-light-font: var(--primary-light);
+  --color-dark-font: var(--primary-dark);
+  --color-grey-bg: var(--color-dark-grey);
+  --color-blue: var(--blue);
+  --color-light-grey: var(--light-grey);
+  --color-dark-grey: var(--dark-grey);
+  --color-pink: var(--dark-pink);
   --font-poppins: var(--font-poppins-sans);
   --font-mulish: var(--font-mulish);
 }

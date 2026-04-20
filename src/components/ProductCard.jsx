@@ -4,9 +4,11 @@ import Image from "next/image";
 const ProductCard = () => {
   return (
     <section className="max-w-97.5">
-      <div className="">
-        <div className="flex justify-between">
-          <div className="bg-">out of stock</div>
+      <div className="relative max-w-45">
+        <div className="flex justify-between absolute top-0 right-0 left-0">
+          <div className="bg-(--color-grey-bg)">
+            out of stock
+          </div>
           <FaRegHeart></FaRegHeart>
         </div>
         <Image

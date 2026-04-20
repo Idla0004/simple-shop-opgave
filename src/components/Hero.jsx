@@ -35,7 +35,7 @@ const Hero = () => {
           width={800}
           height={800}
           alt="Kitty cat"
-          className="max-w-screen"
+          className="max-w-full"
         />
       </div>
     </section>

@@ -21,7 +21,7 @@
   --color-pink: var(--dark-pink);
 
   --font-poppins: var(--font-poppins-sans);
-  --font-mulish: var(--font-mulish);
+  --font-p-mulish: var(--font-mulish);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,19 +30,15 @@
     --primary-light: #e4dfd3;
   }
 }
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-mulish) !important;
+  font-family: var(--font-p-mulish);
 }
 
 h1,
-h2,
 h3,
 h4 {
-  font-family: var(
-    --font-poppins-sans
-  ) !important;
+  font-family: var(--font-poppins);
   font-weight: bold;
 }

@@ -44,14 +44,20 @@ export default function Single() {
               <p>Price 12$</p>
               <p>On sale Price 10$</p>
             </div>
-            <div>
-              <div>
+            <div className="flex gap-8">
+              <div className="flex flex-col">
                 <label>QUANTITY</label>
-                <input type="number"></input>
+                <input
+                  className="bg-blue text-pink text-center"
+                  type="number"
+                ></input>
               </div>
-              <div>
+              <div className="flex flex-col">
                 <label>SIZE</label>
-                <input type="number"></input>
+                <input
+                  className="text-center"
+                  type="number"
+                ></input>
               </div>
             </div>
             <button>add to cart</button>

@@ -23,7 +23,7 @@ const Hero = () => {
             view more.
           </p>
           <div className="row-start-3">
-            <button className=" bg-[#99D2DF] text-[24px] uppercase py-2.5 px-8 mt-10 text-[#2D2D2D] cursor-pointer">
+            <button className=" bg-blue text-[24px] uppercase py-2.5 px-8 mt-10 text-[#2D2D2D] cursor-pointer">
               Go To Categories
             </button>
           </div>

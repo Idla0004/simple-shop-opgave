@@ -9,7 +9,7 @@
   --dark-pink: #630850;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--primary-light);
   --color-foreground: var(--primary-dark);
   --color-light-font: var(--primary-light);

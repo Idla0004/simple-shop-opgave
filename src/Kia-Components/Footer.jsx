@@ -5,11 +5,11 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <section className="flex flex-wrap gap-4 items-center justify-evenly bg-[#2D2D2D] py-20 px-4">
+    <footer className="flex flex-wrap gap-4 items-center justify-evenly bg-[#2D2D2D] py-20 px-4">
       <div className="logo-and-icons">
         <img
           src="/img/KOEBblue.png"
-          alt=""
+          alt="logo image"
           className="max-w-20"
         />
         <div className="flex justify-between my-4">
@@ -28,17 +28,17 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-[#E4DFD3]">
-        <h3 className="font-black">info</h3>
+        <h3>info</h3>
         <p>about us</p>
         <p>events</p>
       </div>
       <div className="text-[#E4DFD3]">
-        <h3 className="font-black">help</h3>
+        <h3>help</h3>
         <p>terms and conditions</p>
         <p>privacy policy</p>
       </div>
       <div className="text-[#E4DFD3]">
-        <h3 className="font-black">contact</h3>
+        <h3>contact</h3>
         <div className="flex items-center gap-2">
           <FiPhone></FiPhone>
           <p>+45 88 66 44 22</p>
@@ -48,7 +48,7 @@ const Footer = () => {
           <p>koeb@email.com</p>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

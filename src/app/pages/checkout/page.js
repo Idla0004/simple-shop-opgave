@@ -3,7 +3,7 @@ import CategoriesScroll from "@/components/CategoriesCheckOut";
 
 export default function CheckOut() {
   return (
-    <main className="grid grid-cols-2 h-screen">
+    <main className="grid grid-cols-2 h-screen w-screen">
       <section className=" bg-[#6F6F78] px-4 pt-8 grid col-1 col-end-1 relative top-0">
         <div className="grid">
           <div className="relative top-40">
@@ -14,7 +14,7 @@ export default function CheckOut() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-8 grid col-2 col-end-2 overflow-clip h-fit min-w-full relative top-30">
+      <section className="px-4 pt-8 grid col-2 col-end-2 overflow-clip h-fit min-w-screen relative top-30">
         <CategoriesScroll />
 
         <div className="px-10 pt-10 object-cover">

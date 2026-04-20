@@ -5,7 +5,7 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-wrap gap-4 items-center justify-evenly bg-[#2D2D2D] py-20 px-4">
+    <footer className="flex flex-wrap gap-4 items-center justify-evenly bg-[#2D2D2D] py-20 px-4 z-1">
       <div className="logo-and-icons">
         <img
           src="/img/KOEBblue.png"

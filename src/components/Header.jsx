@@ -4,7 +4,7 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header className="px-6 py-9 mt-10 grid grid-cols-4 gap-1 bg-[rgba(45,45,45,0.9)] items-center border-b-4 border-[#99D2DF] text-[#E4DFD3]">
+    <header className="px-6 py-9 mt-10 grid grid-cols-4 gap-1 bg-[rgba(45,45,45,0.9)] items-center border-b-4 border-[#99D2DF] text-[#E4DFD3] z-1">
       <figure className="px-16 justify-start col-start-1">
         <Image
           src="/img/KOEBblue.png"

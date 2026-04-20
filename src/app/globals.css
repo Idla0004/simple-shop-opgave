@@ -34,3 +34,8 @@ h4 {
   ) !important;
   font-weight: bold;
 }
+
+main {
+  max-width: 1440px;
+  background: #e4dfd3;
+}

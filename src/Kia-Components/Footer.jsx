@@ -1,31 +1,50 @@
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
+import { FiMail } from "react-icons/fi";
+import { FiPhone } from "react-icons/fi";
+
 const Footer = () => {
   return (
-    <section className="grid grid-cols-1">
+    <section className="flex justify-evenly bg-[#2D2D2D] py-20">
       <div className="logo-and-icons">
-        <img src="" alt="" />
-        <div className="flex justify-between">
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <img
+          src="/img/KOEBblue.png"
+          alt=""
+          className="max-w-20"
+        />
+        <div className="flex justify-between my-4">
+          <div className="bg-[#99D2DF] p-1 rounded-full">
+            <FaFacebookF
+              size={25}
+              color="#2D2D2D"
+            ></FaFacebookF>
+          </div>
+          <div className="bg-[#99D2DF] p-1 rounded-full">
+            <FaInstagram
+              size={25}
+              color="#2D2D2D"
+            ></FaInstagram>
+          </div>
         </div>
       </div>
-      <div className="">
+      <div className="text-[#E4DFD3]">
         <h3>info</h3>
         <p>about us</p>
         <p>events</p>
       </div>
-      <div>
+      <div className="text-[#E4DFD3]">
         <h3>help</h3>
         <p>terms and conditions</p>
         <p>privacy policy</p>
       </div>
-      <div>
+      <div className="text-[#E4DFD3]">
         <h3>contact</h3>
         <div className="flex">
-          <img src="" alt="" />
+          <FiPhone></FiPhone>
           <p>+45 88 66 44 22</p>
         </div>
         <div className="flex">
-          <img src="" alt="" />
+          <FiMail></FiMail>
           <p>koeb@email.com</p>
         </div>
       </div>

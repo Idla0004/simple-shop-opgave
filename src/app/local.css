@@ -1,0 +1,17 @@
+/* ADD CLASS til pris på card HVIS UDSALG */
+.on-sale {
+  text-decoration: line-through;
+}
+
+/* REMOVE CLASS HVIS PÅ UDSALG */
+.deal {
+  display: none;
+}
+
+.on-sale-price {
+  display: none;
+}
+
+.out-of-stock {
+  display: none;
+}

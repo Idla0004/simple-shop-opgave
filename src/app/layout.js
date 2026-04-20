@@ -3,7 +3,7 @@ import {
   Mulish,
 } from "next/font/google";
 import "./globals.css";
-import Header from "@/components-ida/header";
+import Header from "@/components-ida/Header";
 import Footer from "@/Kia-Components/Footer";
 
 const poppinsSans = Poppins({

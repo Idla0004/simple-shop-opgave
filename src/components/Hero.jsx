@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-2 relative bottom-40 left-0 right-0 z-0 justify-center items-end max-w-510 py-0 bg-[#6F6F78]">
-      <div className="bg-[#6F6F78] w-180 h-182 items-center grid grid-rows-3 justify-center">
+    <section className="lg:grid lg:grid-cols-2 relative bottom-40 left-0 right-0 z-0 justify-center py-0 w-screen sm:flex sm:flex-wrap">
+      <div className="relative left-0 bg-[#6F6F78] max-w-screen items-center grid justify-center col-start-1 col-end-1 px-5">
         <div
           className="
-        grid grid-rows-3 row-start-2 px-20"
+        grid grid-rows-3 row-start-1"
         >
           <Image
             src="/img/KOEBdark.png"
@@ -23,19 +23,19 @@ const Hero = () => {
             view more.
           </p>
           <div className="row-start-3">
-            <button className=" bg-blue text-[24px] uppercase py-2.5 px-8 mt-10 text-[#2D2D2D] cursor-pointer">
+            <button className="bg-blue text-[24px] uppercase py-2.5 px-8 mt-10 text-[#2D2D2D] cursor-pointer">
               Go To Categories
             </button>
           </div>
         </div>
       </div>
-      <div className="col-start-2 items-end max-w-[800]">
+      <div className="relative right-0 top-0 col-start-2 col-end-2 max-w-screen">
         <Image
           src="https://placecats.com/750/750"
           width={800}
           height={800}
           alt="Kitty cat"
-          className=""
+          className="max-w-full"
         />
       </div>
     </section>

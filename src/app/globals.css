@@ -50,9 +50,3 @@ main {
   max-width: 1440px;
   background: #e4dfd3;
 }
-
-::-webkit-scrollbar {
-  scrollbar-color: var(--dark-pink);
-  scroll-behavior: auto;
-  scroll-padding-block-end: 30px;
-}

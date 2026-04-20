@@ -22,13 +22,15 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-mulish);
+  font-family: var(--font-mulish) !important;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-poppins-sans);
+  font-family: var(
+    --font-poppins-sans
+  ) !important;
   font-weight: bold;
 }

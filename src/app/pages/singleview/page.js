@@ -5,7 +5,7 @@ import "@/app/local.css";
 export default function Single() {
   return (
     <div>
-      <main className="flex-1 py-10 px-16 bg-background">
+      <main className="w-screen flex-1 py-10 px-16 bg-background">
         <section className="grid pt-8 grid-cols-2">
           <div className="flex m-4 flex-col gap-4 place-items-center mx-8">
             <Image
@@ -55,7 +55,7 @@ export default function Single() {
                 <p>Price 10$</p>
               </div>
             </div>
-            <div className="flex gap-8">
+            <div className="flex flex-wrap gap-8">
               <div className="flex flex-col">
                 <label className="text-dark-grey">
                   QUANTITY
@@ -109,7 +109,7 @@ export default function Single() {
           <h2 className="font-poppins font-semibold text-[32px] my-8">
             reviews
           </h2>
-          <div className="flex justify-evenly">
+          <div className="flex flex-wrap gap-3 justify-evenly">
             <Reviews></Reviews>
             <Reviews></Reviews>
             <Reviews></Reviews>

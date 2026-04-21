@@ -10,7 +10,7 @@ export default function Single() {
           <div className="flex m-4 flex-col gap-4 place-items-center mx-8">
             <Image
               className="object-cover aspect-square"
-              src="https://placecats.com/750/750"
+              src="https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp"
               width={700}
               height={750}
               alt="Kitty cat"

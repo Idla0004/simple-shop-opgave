@@ -1,3 +1,4 @@
+"use client";
 import { FaRegHeart } from "react-icons/fa";
 import Image from "next/image";
 import "../app/local.css";
@@ -7,15 +8,23 @@ const ProductCard = ({
   title,
   price,
   imgsrc,
+  discount,
+  inStock,
 }) => {
+  const discountedPrice =
+    discount > 0
+      ? price - (price * discount) / 100
+      : null;
   return (
     <section className="max-w-97.5">
       <div className="relative">
         <div className="flex justify-between absolute top-0 right-0 left-0 m-2 items-center">
           <div className="text-(--color-light-font) text-[20px] px-2 py-0.5">
-            <p className="out-of-stock bg-(--color-grey-bg)">
-              out of stock
-            </p>
+            {inStock < 2 && (
+              <p className="out-of-stock bg-(--color-grey-bg)">
+                out of stock
+              </p>
+            )}
           </div>
           <div className="rounded-full bg-(--color-background) p-2">
             <FaRegHeart
@@ -32,15 +41,25 @@ const ProductCard = ({
           alt="Kitty cat"
         />
         <div className="flex justify-between absolute bottom-0 right-0 left-0">
-          <div className="bg-(--color-pink) px-5 self-start text-(--color-light-font) text-[24px]">
-            <p className="deal">DEAL</p>
-          </div>
+          {discount > 0 && (
+            <div className="bg-(--color-pink) px-5 self-start text-(--color-light-font) text-[24px]">
+              <p className="deal">DEAL</p>
+            </div>
+          )}
           <div>
-            <p className="on-sale-price text-[20px] px-4 text-end text-pink">
-              sale 234$
-            </p>
-            <p className="text-[20px] px-4 pb-4 text-end">
-              price 1234$
+            {discount > 0 && (
+              <p className="on-sale-price text-[20px] px-4 text-end text-pink">
+                {discountedPrice.toFixed(2)} DKK
+              </p>
+            )}
+            <p
+              className={`text-[20px] px-4 pb-4 text-end ${
+                discount > 0
+                  ? "line-through text-gray-400"
+                  : ""
+              }`}
+            >
+              {price} DKK
             </p>
           </div>
         </div>

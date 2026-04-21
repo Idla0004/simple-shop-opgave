@@ -27,7 +27,7 @@ export default function Products() {
         </button>
       </aside>
       <main className="flex-1 py-10 px-16 bg-[#E4DFD3]">
-        <div className="relative top-40">
+        <div className="relative top-40 pb-25">
           <h1 className="text-6xl relative">
             WOMENS BAGS
           </h1>

@@ -1,22 +1,22 @@
 /* ADD CLASS til pris på card HVIS UDSALG */
-.on-sale {
+/* .on-sale {
   text-decoration: line-through;
 }
 
 /* REMOVE CLASS HVIS PÅ UDSALG */
-.deal {
+/* .deal {
   display: none;
-}
+} */
 
-.on-sale-price {
+/* .on-sale-price {
   display: none;
-}
+} */
 
 /* REMOVE CLASS HVIS OUT OF STOCK PÅ: "out of stock <p>" */
 /* ADD CLASS HVIS OUT OF STOCK PÅ: <div> original pris og udsalgspris </div> */
-.out-of-stock {
+/* .out-of-stock {
   display: none;
-}
+} */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -78,7 +78,7 @@ export default function Single() {
                 </select>
               </div>
             </div>
-            <div className="flex justify-center my-8">
+            <div className="flex justify-center max-w-130 my-8">
               <button className="cursor-pointer bg-pink text-blue font-bold font-poppins w-60 h-12 rounded-lg">
                 add to cart
               </button>

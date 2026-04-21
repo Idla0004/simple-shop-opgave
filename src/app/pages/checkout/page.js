@@ -4,7 +4,7 @@ import CategoriesScroll from "@/components/CategoriesCheckOut";
 export default function CheckOut() {
   return (
     <main className="grid grid-cols-2 h-screen w-screen">
-      <section className=" bg-[#6F6F78] px-4 pt-8 grid col-1 col-end-1 relative top-0">
+      <section className=" bg-(--dark-grey) px-4 pt-8 grid col-1 col-end-1 relative top-0">
         <div className="grid">
           <div className="relative top-40">
             <h2 className="pl-20 font-bold text-(--primary-light) text-2xl">

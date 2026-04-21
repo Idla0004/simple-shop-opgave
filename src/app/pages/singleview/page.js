@@ -6,7 +6,7 @@ export default function Single() {
   return (
     <div>
       <main className="w-screen flex-1 py-10 px-16 bg-background">
-        <section className="grid pt-8 grid-cols-2">
+        <section className="grid pt-8 grid-cols-2 relative top-30 pb-25">
           <div className="flex m-4 flex-col gap-4 place-items-center mx-8">
             <Image
               className="object-cover aspect-square"

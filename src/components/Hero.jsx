@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="grid grid-cols-2 z-0 justify-center py-0 w-screen mb-8">
-      <div className="max-h-200 min-h-screen bg-[#6F6F78] items-center grid col-start-1 justify-center">
+      <div className="max-h-200 min-h-screen bg-grey-bg items-center grid col-start-1 justify-center">
         <div
           className="
         grid auto-rows-auto"
@@ -16,14 +16,14 @@ const Hero = () => {
             loading="eager"
             className="row-start-2 "
           />
-          <p className="row-start-3 text-[20px] text-[#E4DFD3] text-pretty max-w-115 mt-6">
+          <p className="row-start-3 text-[18px] text-light-font text-pretty max-w-115 mt-6">
             Your premium destination for fashion.
             Discover new styles and find your new
             dream look. Explore our categories to
             view more.
           </p>
           <div className="row-start-4">
-            <button className="bg-blue text-[24px] uppercase py-2.5 px-8 mt-10 text-[#2D2D2D] cursor-pointer">
+            <button className="bg-blue text-[20px] font-semibold uppercase py-2 px-9 mt-10 text-dark-font cursor-pointer">
               Go To Categories
             </button>
           </div>

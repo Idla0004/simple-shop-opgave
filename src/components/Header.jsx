@@ -4,7 +4,7 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header className="px-6 py-9 mt-8 flex flex-row justify-between gap-1 bg-[rgba(45,45,45,0.9)] items-center border-b-4 border-[#99D2DF] text-[#E4DFD3] z-1 absolute w-screen">
+    <header className="px-6 py-9 mt-8 flex flex-row justify-between gap-1 bg-[rgba(45,45,45,0.9)] items-center border-b-4 border-blue text-light-font z-1 absolute w-screen">
       <figure className="px-16 justify-start">
         <Image
           src="/img/KOEBblue.png"
@@ -22,14 +22,14 @@ const Header = () => {
         </ul>
       </div>
       <div className="">
-        <form className="flex items-center border text-[#2D2D2D] rounded-full px-4 p-2 gap-1 bg-[#99D2DF] w-xs justify-start">
+        <form className="flex items-center border text-dark-font rounded-full px-4 p-2 gap-1 bg-blue w-xs justify-start">
           <button type="submit">
             <IoIosSearch size={25} />
           </button>
           <input
             type="search"
             name="query"
-            className="outline-none focus:border-[#2D2D2D]"
+            className="outline-none focus:border-dark-font"
             placeholder="Search products..."
           />
         </form>

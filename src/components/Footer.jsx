@@ -10,20 +10,22 @@ const Footer = () => {
         <img
           src="/img/KOEBblue.png"
           alt="logo image"
-          className="max-w-20"
+          className="max-w-20 cursor-pointer"
         />
         <div className="flex justify-between my-4">
           <div className="bg-[#99D2DF] p-1 rounded-full">
             <FaFacebookF
               size={25}
               color="#2D2D2D"
-            ></FaFacebookF>
+              className="cursor-pointer"
+            />
           </div>
           <div className="bg-[#99D2DF] p-1 rounded-full">
             <FaInstagram
               size={25}
               color="#2D2D2D"
-            ></FaInstagram>
+              className="cursor-pointer"
+            />
           </div>
         </div>
       </div>
@@ -39,12 +41,12 @@ const Footer = () => {
       </div>
       <div className="text-[#E4DFD3]">
         <h3>contact</h3>
-        <div className="flex items-center gap-2">
-          <FiPhone></FiPhone>
+        <div className="flex items-center gap-2 cursor-pointer">
+          <FiPhone />
           <p>+45 88 66 44 22</p>
         </div>
-        <div className="flex items-center gap-2">
-          <FiMail className=""></FiMail>
+        <div className="flex items-center gap-2 cursor-pointer">
+          <FiMail className="" />
           <p>koeb@email.com</p>
         </div>
       </div>

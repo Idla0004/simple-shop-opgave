@@ -46,3 +46,13 @@ main {
   max-width: full;
   background: #e4dfd3;
 }
+
+button {
+  cursor: pointer;
+}
+
+header li,
+footer p,
+footer h3 {
+  cursor: pointer;
+}

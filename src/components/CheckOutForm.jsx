@@ -3,25 +3,21 @@ const Form = () => {
     <form className="flex flex-row flex-wrap gap-10 py-5 px-8 place-items-center justify-center mt-8">
       <input
         type="text"
-        name="query"
         className="text-light-grey px-1 py-2 outline-none border-b border-light-grey w-70 uppercase"
         placeholder="Name"
       />
       <input
         type="text"
-        name="query"
         className="text-light-grey px-1 py-2 outline-none border-b border-light-grey w-70 uppercase"
         placeholder="Adress"
       />
       <input
         type="text"
-        name="query"
         className="text-light-grey px-1 py-2 outline-none border-b border-light-grey w-70 uppercase"
         placeholder="Phone Number"
       />
       <input
         type="text"
-        name="query"
         className="text-light-grey px-1 py-2 outline-none border-b border-light-grey w-70 uppercase"
         placeholder="E-mail"
       />

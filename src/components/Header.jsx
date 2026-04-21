@@ -12,7 +12,7 @@ const Header = () => {
           height={30}
           alt="Logo"
           loading="eager"
-          className="min-w-20 min-h-fit"
+          className="min-w-20 min-h-fit cursor-pointer"
         />
       </figure>
       <div className="items-center justify-start">
@@ -43,6 +43,7 @@ const Header = () => {
           <MdOutlineShoppingBag
             size={35}
             color="#E4DFD3"
+            className="cursor-pointer"
           />
         </button>
       </div>

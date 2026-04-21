@@ -12,6 +12,18 @@
   display: none;
 }
 
+/* REMOVE CLASS HVIS OUT OF STOCK PÅ: "out of stock <p>" */
+/* ADD CLASS HVIS OUT OF STOCK PÅ: <div> original pris og udsalgspris </div> */
 .out-of-stock {
   display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }

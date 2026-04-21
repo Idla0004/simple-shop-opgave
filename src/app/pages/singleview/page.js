@@ -1,11 +1,16 @@
 import Reviews from "@/components/Reviews";
 import Image from "next/image";
 import "@/app/local.css";
+import { Suspense } from "react";
+
+const id = params.get("id");
 
 const Single = ({ params }) => {
   return (
     <main>
-      <Details params={params}></Details>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Details params={params.id}></Details>
+      </Suspense>
     </main>
   );
 
@@ -13,7 +18,7 @@ const Single = ({ params }) => {
     const { id } = await params;
 
     const response = await fetch(
-      `https://dummyjson.com/products/category/${category}/${id}`,
+      `https://dummyjson.com/products/category/${id}`,
     );
 
     const product = await response.json();

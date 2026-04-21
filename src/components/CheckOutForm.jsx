@@ -1,28 +1,28 @@
 const Form = () => {
   return (
-    <form className="grid grid-rows-2 grid-cols-2 gap-10 py-5 px-8">
+    <form className="flex flex-row flex-wrap gap-10 py-5 px-8 place-items-center justify-center mt-8">
       <input
         type="text"
         name="query"
-        className="text-[#D0CFCB] px-3 py-2 outline-none border-b border-[#D0CFCB]"
+        className="text-[#D0CFCB] px-1 py-2 outline-none border-b border-[#D0CFCB] w-70"
         placeholder="Name"
       />
       <input
         type="text"
         name="query"
-        className="text-[#D0CFCB] px-3 py-2 outline-none border-b border-[#D0CFCB]"
+        className="text-[#D0CFCB] px-3 py-2 outline-none border-b border-[#D0CFCB] w-70"
         placeholder="Adress"
       />
       <input
         type="text"
         name="query"
-        className="text-[#D0CFCB] px-3 py-2 outline-none border-b border-[#D0CFCB]"
+        className="text-[#D0CFCB] px-3 py-2 outline-none border-b border-[#D0CFCB] w-70"
         placeholder="Phone Number"
       />
       <input
         type="text"
         name="query"
-        className="text-[#D0CFCB] px-3 py-2 outline-none border-b border-[#D0CFCB]"
+        className="text-[#D0CFCB] px-3 py-2 outline-none border-b border-[#D0CFCB] w-70"
         placeholder="E-mail"
       />
       <div className="flex flex-col gap-5 items-center ">

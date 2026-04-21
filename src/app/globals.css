@@ -51,6 +51,8 @@ button {
   cursor: pointer;
 }
 
-header li {
+header li,
+footer p,
+footer h3 {
   cursor: pointer;
 }

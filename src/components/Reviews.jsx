@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 const Reviews = () => {
   return (
     <section className="bg-grey-bg min-w-80 max-w-87.5 h-40 flex flex-col justify-center items-center">
-      <div className="flex">
+      <div className="flex mb-4 gap-1">
         <FaStar
           size={25}
           color="#99D2DF"
@@ -27,7 +27,9 @@ const Reviews = () => {
       </div>
       <div className="text-light-font">
         <h3>Name of reviewer</h3>
-        <p>"Quote from reviewer!"</p>
+        <p className="mx-4">
+          "Quote from reviewer!"
+        </p>
       </div>
     </section>
   );

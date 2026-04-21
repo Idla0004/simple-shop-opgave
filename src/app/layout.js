@@ -8,7 +8,14 @@ import Footer from "@/components/Footer";
 
 const poppinsSans = Poppins({
   variable: "--font-poppins-sans",
-  weight: ["900"],
+  weight: [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900",
+  ],
   subsets: ["latin"],
 });
 

@@ -1,4 +1,6 @@
-import ProductCard from "@/components/ProductCard";
+/* "use client"; */
+
+import ProductList from "@/components/ProductList";
 
 export default function Products() {
   return (
@@ -34,12 +36,7 @@ export default function Products() {
             find your new favorite
           </p>
           <section className="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-4 gap-y-10 py-14 place-items-center justify-between">
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
+            <ProductList></ProductList>
           </section>
         </div>
       </main>

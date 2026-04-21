@@ -2,7 +2,12 @@ import { FaRegHeart } from "react-icons/fa";
 import Image from "next/image";
 import "../app/local.css";
 
-const ProductCard = () => {
+const ProductCard = ({
+  id,
+  title,
+  price,
+  imgsrc,
+}) => {
   return (
     <section className="max-w-97.5">
       <div className="relative">
@@ -21,7 +26,7 @@ const ProductCard = () => {
         </div>
         <Image
           className="object-cover aspect-8/9"
-          src="https://placecats.com/750/750"
+          src={imgsrc}
           width={400}
           height={450}
           alt="Kitty cat"
@@ -42,7 +47,7 @@ const ProductCard = () => {
       </div>
       <div className="bg-(--color-grey-bg) py-4">
         <h2 className="font-(--font-p-mulish) text-[28px] mx-2 mb-3">
-          Product name
+          {title}
         </h2>
         <div className="grid grid-cols-2 gap-8">
           <button className="bg-(--color-foreground) py-1 px-2 text-(--color-light-font) text-[20px]">

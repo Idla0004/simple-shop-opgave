@@ -2,6 +2,7 @@
 import { FaRegHeart } from "react-icons/fa";
 import Image from "next/image";
 import "../app/local.css";
+import Link from "next/link";
 
 const ProductCard = ({
   id,
@@ -72,9 +73,11 @@ const ProductCard = ({
           <button className="bg-(--color-foreground) py-1 px-2 text-(--color-light-font) text-[20px]">
             ADD TO CART
           </button>
-          <button className="bg-(--color-background) py-1 px-2 text-(--color-dark-font) text-[20px]">
-            BUY NOW
-          </button>
+          <Link href={`/singleview/${id}`}>
+            <button className="bg-(--color-background) py-1 px-2 text-(--color-dark-font) text-[20px]">
+              BUY NOW
+            </button>
+          </Link>
         </div>
       </div>
     </section>

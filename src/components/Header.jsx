@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineShoppingBag } from "react-icons/md";
 
@@ -6,19 +7,25 @@ const Header = () => {
   return (
     <header className="px-6 py-9 mt-8 flex flex-row justify-between gap-1 bg-[rgba(45,45,45,0.9)] items-center border-b-4 border-blue text-light-font z-1 absolute w-screen">
       <figure className="px-16 justify-start">
-        <Image
-          src="/img/KOEBblue.png"
-          width={100}
-          height={30}
-          alt="Logo"
-          loading="eager"
-          className="min-w-20 min-h-fit cursor-pointer"
-        />
+        <Link href={"/"}>
+          <Image
+            src="/img/KOEBblue.png"
+            width={100}
+            height={30}
+            alt="Logo"
+            loading="eager"
+            className="min-w-20 min-h-fit cursor-pointer"
+          />
+        </Link>
       </figure>
       <div className="items-center justify-start">
         <ul className="flex gap-15 px-2 text-xl">
-          <li>Home</li>
-          <li>Products</li>
+          <Link href={"/"}>
+            <li>Home</li>
+          </Link>
+          <Link href={"/products"}>
+            <li>Products</li>
+          </Link>
         </ul>
       </div>
       <div className="">
@@ -39,13 +46,15 @@ const Header = () => {
         <button className="text-xl">
           Sign in
         </button>
-        <button className="">
-          <MdOutlineShoppingBag
-            size={35}
-            color="#E4DFD3"
-            className="cursor-pointer"
-          />
-        </button>
+        <Link href={"/checkout"}>
+          <button className="">
+            <MdOutlineShoppingBag
+              size={35}
+              color="#E4DFD3"
+              className="cursor-pointer"
+            />
+          </button>
+        </Link>
       </div>
     </header>
   );

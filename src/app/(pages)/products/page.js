@@ -1,51 +1,23 @@
-/* "use client"; */
+// app/products/page.js
 import { Suspense } from "react";
 import ProductList from "@/components/ProductList";
-import Link from "next/link";
+import SideBarNavigation from "@/components/SiderBarNavigation";
 
-export default function Products() {
+export default function ProductsPage({
+  searchParams,
+}) {
   return (
     <div className="flex items-start">
-      <aside className="flex flex-col justify-center sticky h-screen min-w-60 max-w-100 top-0 p-8 bg-grey-bg">
-        <h2 className="text-light-font mb-1">
-          CATEGORIES
-        </h2>
-        <ul className="border-l text-light-font">
-          <li className="p-2">mens watches</li>
-          <li className="p-2">womens watches</li>
-          <li className="p-2">womens bags</li>
-          <li className="p-2">mens sunglasses</li>
-          <li className="p-2">
-            womens sunglasses
-          </li>
-          <li className="p-2">womens dresses</li>
-          <li className="p-2">mens shirts</li>
-          <li className="p-2">womens shoes</li>
-          <li className="p-2">mens shoes</li>
-        </ul>
-        <button className="my-6 px-4 py-1 font-bold font-poppins text-[20px] text-pink text-left bg-background w-42">
-          SALE
-        </button>
-      </aside>
+      <SideBarNavigation />
       <main className="flex-1 py-10 px-16 bg-[#E4DFD3]">
         <div className="relative top-40 pb-25">
-          <h1 className="text-6xl relative">
-            WOMENS BAGS
-          </h1>
-          <p className="text-[24px] my-4">
-            Discover our selection of BAGS and
-            find your new favorite
-          </p>
-          <Link href="/singleview/1">
-            Test Single View
-          </Link>
-          <section className="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-4 gap-y-10 py-14 place-items-center justify-between">
-            <Suspense
-              fallback={<div>Loading...</div>}
-            >
-              <ProductList></ProductList>
-            </Suspense>
-          </section>
+          <Suspense
+            fallback={<div>Indlæser...</div>}
+          >
+            <ProductList
+              searchParams={searchParams}
+            />
+          </Suspense>
         </div>
       </main>
     </div>

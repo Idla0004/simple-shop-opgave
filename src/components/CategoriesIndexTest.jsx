@@ -1,3 +1,4 @@
+// components/CategoriesIndexTest.jsx
 import FetchCategory from "./FetchCategory";
 
 const categories = [

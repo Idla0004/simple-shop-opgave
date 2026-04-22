@@ -2,6 +2,7 @@ import Reviews from "@/components/Reviews";
 import Image from "next/image";
 import "@/app/local.css";
 import { Suspense } from "react";
+import Images from "@/components/Images";
 
 const Single = ({ params }) => {
   return (
@@ -33,41 +34,11 @@ const Details = async ({ params }) => {
   return (
     <main className="w-screen flex-1 py-10 px-16 bg-background">
       <section className="grid pt-8 grid-cols-2 relative top-30 pb-25">
-        <div className="flex m-4 flex-col gap-4 place-items-center mx-8">
-          <Image
-            className="object-cover aspect-square"
-            loading="eager"
-            src={product.images[0]}
-            width={700}
-            height={750}
-            alt="Kitty cat"
-          ></Image>
-          <div className="flex gap-4">
-            <Image
-              className="object-cover max-w-[50%] aspect-6/7"
-              src={product.images[0]}
-              width={400}
-              height={450}
-              alt="Kitty cat"
-            ></Image>
-            <div className="flex flex-col gap-4">
-              <Image
-                className="object-cover aspect-5/4"
-                src={product.images[1]}
-                width={400}
-                height={450}
-                alt="Kitty cat"
-              ></Image>
-              <Image
-                className="object-cover aspect-5/4"
-                src={product.images[2]}
-                width={400}
-                height={450}
-                alt="Kitty cat"
-              ></Image>
-            </div>
-          </div>
-        </div>
+        <Images
+          imagesource0={product.images[0]}
+          imagesource1={product.images[1]}
+          imagesource2={product.images[2]}
+        ></Images>
         <div>
           <h2 className="text-[40px] uppercase font-semibold">
             {product.title}

@@ -3,6 +3,7 @@ import Image from "next/image";
 import "@/app/local.css";
 import { Suspense } from "react";
 import Images from "@/components/Images";
+import AddToCartBtn from "@/components/AddToCartBtn";
 
 const Single = ({ params }) => {
   return (
@@ -95,11 +96,7 @@ const Details = async ({ params }) => {
               </select>
             </div>
           </div>
-          <div className="flex justify-center max-w-130 my-8">
-            <button className="cursor-pointer bg-pink text-blue font-bold font-poppins w-60 h-12 rounded-lg">
-              add to cart
-            </button>
-          </div>
+          <AddToCartBtn id={id}></AddToCartBtn>
           <div className="my-4">
             <div className="my-4">
               <h3 className="mb-2">

@@ -5,6 +5,7 @@ const useAddedProducts = create(
   persist(
     (set, get) => ({
       addedtocart: [],
+
       setAddedToCart: (id) =>
         set((state) => ({
           addedtocart: [

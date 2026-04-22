@@ -73,7 +73,7 @@ const ProductCard = ({
           <button className="bg-(--color-foreground) py-1 px-2 text-(--color-light-font) text-[20px]">
             ADD TO CART
           </button>
-          <Link href={`/pages/singleview/${id}`}>
+          <Link href={`/singleview/${id}`}>
             <button className="bg-(--color-background) py-1 px-2 text-(--color-dark-font) text-[20px]">
               BUY NOW
             </button>

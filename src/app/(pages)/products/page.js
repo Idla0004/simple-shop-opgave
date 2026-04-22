@@ -1,6 +1,7 @@
 /* "use client"; */
-
+import { Suspense } from "react";
 import ProductList from "@/components/ProductList";
+import Link from "next/link";
 
 export default function Products() {
   return (
@@ -35,8 +36,15 @@ export default function Products() {
             Discover our selection of BAGS and
             find your new favorite
           </p>
+          <Link href="/singleview/1">
+            Test Single View
+          </Link>
           <section className="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-4 gap-y-10 py-14 place-items-center justify-between">
-            <ProductList></ProductList>
+            <Suspense
+              fallback={<div>Loading...</div>}
+            >
+              <ProductList></ProductList>
+            </Suspense>
           </section>
         </div>
       </main>

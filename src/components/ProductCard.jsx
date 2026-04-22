@@ -43,7 +43,7 @@ const ProductCard = ({
         />
         <div className="flex justify-between absolute bottom-0 right-0 left-0">
           {discount > 0 && (
-            <div className="bg-(--color-pink) px-5 self-start text-(--color-light-font) text-[24px]">
+            <div className="bg-pink px-5 self-start text-(--color-light-font) text-[24px]">
               <p className="deal">DEAL</p>
             </div>
           )}

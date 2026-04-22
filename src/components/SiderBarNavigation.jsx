@@ -24,19 +24,24 @@ export default function SideBarNavigation() {
       <h2 className="text-light-font mb-1">
         CATEGORIES
       </h2>
+      <Link href="/products">
+        <li className="border-l p-2 font-bold text-light-font cursor-pointer hover:bg-blue hover:text-dark-font list-none">
+          View all
+        </li>
+      </Link>
       <ul className="border-l text-light-font">
         {categories.map((category) => (
           <Link
             key={category.slug}
-            href={`/test?category=${category.slug}`}
+            href={`/products?category=${category.slug}`}
           >
-            <li className="p-2 cursor-pointer hover:bg-gray-200">
+            <li className="p-2 cursor-pointer hover:bg-blue hover:text-dark-font">
               {category.name}
             </li>
           </Link>
         ))}
       </ul>
-      <Link href="/test?sale=true">
+      <Link href="/products?sale=true">
         <button className="my-6 px-4 py-1 font-bold font-poppins text-[20px] text-pink text-left bg-background w-42">
           SALE
         </button>

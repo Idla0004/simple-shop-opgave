@@ -37,7 +37,7 @@ const Details = async ({ params }) => {
           <Image
             className="object-cover aspect-square"
             loading="eager"
-            src={product.images[1]}
+            src={product.images[0]}
             width={700}
             height={750}
             alt="Kitty cat"
@@ -161,18 +161,21 @@ const Details = async ({ params }) => {
               product.reviews[0].reviewerName
             }
             comment={product.reviews[0].comment}
+            rating={product.reviews[0].rating}
           ></Reviews>
           <Reviews
             reviewerName={
               product.reviews[1].reviewerName
             }
             comment={product.reviews[1].comment}
+            rating={product.reviews[1].rating}
           ></Reviews>
           <Reviews
             reviewerName={
               product.reviews[2].reviewerName
             }
             comment={product.reviews[2].comment}
+            rating={product.reviews[2].rating}
           ></Reviews>
         </div>
       </section>

@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
       <div className="relative right-0 top-0 col-start-2 col-end-2">
         <Image
-          src="https://placecats.com/750/750"
+          src="https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/1.webp"
           width={800}
           height={800}
           alt="Kitty cat"

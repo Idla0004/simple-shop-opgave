@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
-import CategoriesIndex from "@/components/CategoriesIndex";
+import CategoriesIndexTest from "@/components/CategoriesIndex";
 export default function Home() {
   return (
     <div className="bg-primary-light">
       <main className=" bg-primary-light">
         <Hero />
-        <CategoriesIndex />
+        <CategoriesIndexTest />
       </main>
     </div>
   );

@@ -23,9 +23,11 @@ const Details = async ({ params }) => {
   const product = await response.json();
 
   const discountedPrice =
-    product.discount > 0
+    product.discountPercentage > 0
       ? product.price -
-        (product.price * product.discount) / 100
+        (product.price *
+          product.discountPercentage) /
+          100
       : null;
 
   return (
@@ -76,19 +78,18 @@ const Details = async ({ params }) => {
             </div>
           )}
           <div className="text-[32px] font-bold font-poppins flex gap-8">
-            <div className="flex">
+            <div className="flex items-center">
               <p
                 className={`${
-                  product.discount > 0
-                    ? "line-through text-gray-400"
+                  product.discountPercentage > 0
+                    ? "line-through text-gray-600 text-[28px]"
                     : ""
                 }`}
               >
-                {product.price}
+                {product.price}$
               </p>
-              <p>$</p>
             </div>
-            {product.discount > 0 && (
+            {product.discountPercentage > 0 && (
               <div className="on-sale-price flex gap-4 text-pink">
                 <p>NOW</p>
                 <div className="flex">

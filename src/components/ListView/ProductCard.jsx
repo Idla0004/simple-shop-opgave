@@ -1,9 +1,9 @@
 "use client";
 import { FaRegHeart } from "react-icons/fa";
 import Image from "next/image";
-import "../app/local.css";
+import "@/app/local.css";
 import Link from "next/link";
-import ProductCardAddBtn from "@/components/ProductCartAddBtn";
+import ProductCardAddBtn from "@/components/ListView/ProductCartAddBtn";
 
 const ProductCard = ({
   id,

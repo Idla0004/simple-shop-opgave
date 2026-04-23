@@ -1,5 +1,5 @@
 // components/FetchCategory.jsx
-import CategoryCard from "@/components/CategoryCard";
+import CategoryCard from "@/components/Categories/CategoryCard";
 
 export default function FetchCategory({
   categories,

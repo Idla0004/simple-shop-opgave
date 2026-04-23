@@ -1,4 +1,4 @@
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/components/ListView/ProductCard";
 
 const categories = [
   { slug: "mens-watches", name: "Mens Watches" },

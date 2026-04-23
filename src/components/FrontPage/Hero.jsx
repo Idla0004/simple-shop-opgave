@@ -38,7 +38,7 @@ const Hero = () => {
           width={800}
           height={800}
           alt="Womens handbag black"
-          className="size-full object-cover"
+          className="size-full object-cover bg-[#D0CFCB]"
         />
       </div>
     </section>

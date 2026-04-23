@@ -1,7 +1,7 @@
 // app/products/page.js
 import { Suspense } from "react";
-import ProductList from "@/components/ProductList";
-import SideBarNavigation from "@/components/SiderBarNavigation";
+import ProductList from "@/components/ListView/ProductList";
+import SideBarNavigation from "@/components/ListView/SiderBarNavigation";
 
 export default function ProductsPage({
   searchParams,

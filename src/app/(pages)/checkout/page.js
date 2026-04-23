@@ -1,5 +1,5 @@
-import Form from "@/components/CheckOutForm";
-import CategoriesScroll from "@/components/CategoriesCheckOut";
+import Form from "@/components/CheckOut/CheckOutForm";
+import CategoriesScroll from "@/components/CheckOut/CategoriesCheckOut";
 
 export default function CheckOut() {
   return (

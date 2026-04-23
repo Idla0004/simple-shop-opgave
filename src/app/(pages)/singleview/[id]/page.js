@@ -1,9 +1,9 @@
-import Reviews from "@/components/Reviews";
+import Reviews from "@/components/SingleView/Reviews";
 import Image from "next/image";
 import "@/app/local.css";
 import { Suspense } from "react";
-import Images from "@/components/Images";
-import AddToCartBtn from "@/components/AddToCartBtn";
+import Images from "@/components/SingleView/Images";
+import AddToCartBtn from "@/components/SingleView/AddToCartBtn";
 
 const Single = ({ params }) => {
   return (

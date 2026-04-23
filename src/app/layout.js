@@ -3,8 +3,9 @@ import {
   Mulish,
 } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import "./local.css";
+import Header from "@/components/LayoutComponents/Header";
+import Footer from "@/components/LayoutComponents/Footer";
 
 const poppinsSans = Poppins({
   variable: "--font-poppins-sans",

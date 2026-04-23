@@ -1,4 +1,4 @@
-import FetchCategory from "./FetchCategory";
+import FetchCategory from "../Categories/FetchCategory";
 
 const categories = [
   {

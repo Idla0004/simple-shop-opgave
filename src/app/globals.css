@@ -19,6 +19,7 @@
   --color-light-grey: var(--light-grey);
   --color-dark-grey: var(--dark-grey);
   --color-pink: var(--dark-pink);
+  --bg-photo-grey: var(--light-grey);
 
   --font-poppins: var(--font-poppins-sans);
   --font-p-mulish: var(--font-mulish);

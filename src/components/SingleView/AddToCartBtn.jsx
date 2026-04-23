@@ -24,7 +24,7 @@ const AddToCartBtn = ({ product }) => {
       <button
         onClick={handleClick}
         disabled={isAdded}
-        className={`cursor-pointer bg-pink text-blue font-bold font-poppins w-60 h-12 rounded-lg ${isAdded ? "bg-blue-500" : ""}`}
+        className={`cursor-pointer bg-pink hover:bg-[#a42189] text-blue font-bold font-poppins w-60 h-12 rounded-lg ${isAdded ? "bg-blue-500" : ""}`}
       >
         {buttonText}
       </button>

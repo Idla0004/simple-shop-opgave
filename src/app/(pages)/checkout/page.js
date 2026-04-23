@@ -48,7 +48,7 @@ export default function CheckOut() {
           <div className="pl-76">
             <button
               type="submit"
-              className="lowercase text-pink bg-blue hover:bg-(light-blue) rounded-md py-1 px-2 text-[20px] w-50 mt-8"
+              className="lowercase text-pink bg-blue hover:bg-[#c4f4ff] rounded-md py-1 px-2 text-[20px] w-50 mt-8"
             >
               Check out
             </button>

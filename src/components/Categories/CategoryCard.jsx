@@ -9,16 +9,18 @@ export default function CategoryCard({
 }) {
   return (
     <Link href={`/products?category=${slug}`}>
-      <Image
-        className="rounded-full bg-dark-grey"
-        src={imgsrc}
-        width={250}
-        height={250}
-        alt={title}
-      />
-      <p className="mt-5 text-center text-m font-bold">
-        {title}
-      </p>
+      <div className="h-90">
+        <Image
+          className="rounded-full bg-dark-grey"
+          src={imgsrc}
+          width={250}
+          height={250}
+          alt={title}
+        />
+        <p className="mt-5 text-center text-lg font-semibold hover:font-bold">
+          {title}
+        </p>
+      </div>
     </Link>
   );
 }

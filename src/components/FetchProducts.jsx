@@ -61,7 +61,7 @@ export default async function FetchProducts({
               id={product.id}
               title={product.title}
               price={product.price}
-              imgsrc={product.thumbnail}
+              imgsrc={product.images[0]}
               discount={
                 product.discountPercentage
               }

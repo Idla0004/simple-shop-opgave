@@ -3,12 +3,14 @@ import { FaRegHeart } from "react-icons/fa";
 import Image from "next/image";
 import "../app/local.css";
 import Link from "next/link";
+import ProductCardAddBtn from "@/components/ProductCartAddBtn";
 
 const ProductCard = ({
   id,
   title,
   price,
   imgsrc,
+  images,
   discount,
   inStock,
 }) => {
@@ -16,6 +18,14 @@ const ProductCard = ({
     discount > 0
       ? price - (price * discount) / 100
       : null;
+
+  const product = {
+    id,
+    image: imgsrc,
+    title,
+    price,
+  };
+
   return (
     <section className="max-w-97.5">
       <div className="relative">
@@ -70,9 +80,7 @@ const ProductCard = ({
           {title}
         </h2>
         <div className="grid grid-cols-2 gap-8">
-          <button className="bg-(--color-foreground) py-1 px-2 text-(--color-light-font) text-[20px]">
-            ADD TO CART
-          </button>
+          <ProductCardAddBtn product={product} />
           <Link href={`/singleview/${id}`}>
             <button className="bg-(--color-background) py-1 px-2 text-(--color-dark-font) text-[20px]">
               BUY NOW

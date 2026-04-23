@@ -17,11 +17,11 @@ const Images = ({
   return (
     <div className="flex m-4 flex-col gap-4 place-items-center mx-8">
       <Image
-        className="object-cover aspect-square"
+        className="object-cover aspect-square bg-light-grey"
         loading="eager"
         src={bigImg}
-        width={700}
-        height={750}
+        width={400}
+        height={450}
         alt="Product image 1"
       ></Image>
       <div className="flex gap-4">
@@ -29,10 +29,10 @@ const Images = ({
           onClick={() =>
             updateBigImgSrc(imagesource0)
           }
-          className="object-cover max-w-[50%] aspect-6/7"
+          className="object-cover max-w-[50%] aspect-6/7 bg-light-grey"
           src={imagesource0}
-          width={400}
-          height={450}
+          width={200}
+          height={250}
           alt="Product image 2"
         ></Image>
         <div className="flex flex-col gap-4">
@@ -40,20 +40,20 @@ const Images = ({
             onClick={() =>
               updateBigImgSrc(imagesource1)
             }
-            className="object-cover aspect-5/4"
+            className="object-cover aspect-5/4 bg-light-grey"
             src={imagesource1}
-            width={400}
-            height={450}
+            width={200}
+            height={250}
             alt="Product image 3"
           ></Image>
           <Image
             onClick={() =>
               updateBigImgSrc(imagesource2)
             }
-            className="object-cover aspect-5/4"
+            className="object-cover aspect-5/4 bg-light-grey"
             src={imagesource2}
-            width={400}
-            height={450}
+            width={200}
+            height={250}
             alt="Product image 4"
           ></Image>
         </div>

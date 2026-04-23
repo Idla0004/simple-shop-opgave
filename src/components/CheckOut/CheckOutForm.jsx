@@ -24,13 +24,13 @@ const Form = () => {
       <div className="flex flex-col gap-5 items-center ">
         <button
           type="submit"
-          className="lowercase bg-(--blue) text-dark-pink rounded-md py-1 px-2 text-[20px] w-50"
+          className="lowercase bg-(--blue) text-dark-pink rounded-md py-1 px-2 text-[20px] w-50 hover:bg-[#c4f4ff]"
         >
           Sign up
         </button>
         <button
           type="submit"
-          className="lowercase text-blue bg-(--dark-pink) rounded-md py-1 px-2 text-[20px] w-50"
+          className="lowercase text-blue bg-(--dark-pink) rounded-md py-1 px-2 text-[20px] w-50 hover:bg-[#a42189]"
         >
           Check out
         </button>

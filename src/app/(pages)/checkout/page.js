@@ -1,9 +1,21 @@
+"use client";
 import Form from "@/components/CheckOut/CheckOutForm";
 import CategoriesScroll from "@/components/CheckOut/CategoriesCheckOut";
+import useAddedProducts from "@/store/addedtocart";
 
 export default function CheckOut() {
+  const { addedtocart } = useAddedProducts();
+
+  const subtotal = addedtocart.reduce(
+    (sum, product) => sum + product.price,
+    0,
+  );
+
+  const shippingFee = 12.56;
+
+  const total = subtotal + shippingFee;
   return (
-    <main className="grid grid-cols-2 h-screen w-screen">
+    <main className="h-screen grid grid-cols-2 w-screen">
       <section className=" bg-(--dark-grey) px-4 pt-8 grid col-1 col-end-1 relative top-0">
         <div className="grid">
           <div className="relative top-40">
@@ -14,15 +26,15 @@ export default function CheckOut() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-8 grid col-2 col-end-2 h-fit min-w-full relative top-30 overflow-hidden">
+      <section className=" px-4 pt-2 grid col-2 col-end-2 min-w-full pb-20 relative top-30 overflow-hidden">
         <CategoriesScroll />
-        <div className="flex flex-col flex-wrap px-10 pt-10 object-cover">
-          <div className="border-b flex justify-between w-125 pb-4 border-dark-grey">
+        <div className="flex flex-col flex-wrap px-10 pt-2 object-cover">
+          <div className="border-b flex justify-between w-125 pb-2 border-dark-grey">
             <h2 className="row-start-1 text-dark-grey">
               Shipping Fee
             </h2>
             <p className="row-start-2 text-dark-grey">
-              12.56,-
+              12.56 $
             </p>
           </div>
           <div className="flex justify-between max-w-125 pt-6">
@@ -30,13 +42,13 @@ export default function CheckOut() {
               Total
             </h2>
             <p className="col-start-2 text-dark-grey">
-              1234.56,-
+              {total.toFixed(2)} $
             </p>
           </div>
           <div className="pl-76">
             <button
               type="submit"
-              className="lowercase text-pink bg-blue rounded-md py-1 px-2 text-[20px] w-50 mt-8"
+              className="lowercase text-pink bg-blue hover:bg-[#c4f4ff] rounded-md py-1 px-2 text-[20px] w-50 mt-8"
             >
               Check out
             </button>

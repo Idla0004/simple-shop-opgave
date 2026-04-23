@@ -1,14 +1,12 @@
 "use client";
 import useAddedProducts from "@/store/addedtocart";
 import Image from "next/image";
-import { FaTrashCan } from "react-icons/fa6";
 
 const CategoriesCheckOut = () => {
-  const { addedtocart, removeAddedToCart } =
-    useAddedProducts();
+  const { addedtocart } = useAddedProducts();
 
   return (
-    <section className="pt-2 px-3 flex flex-col items-center justify-center w-full overflow-clip">
+    <section className="pt-8 px-3 flex flex-col items-center justify-center w-full overflow-clip">
       <h2 className="lowercase text-2xl self-start font-semibold">
         Your order
       </h2>
@@ -26,9 +24,9 @@ const CategoriesCheckOut = () => {
           {addedtocart.map((product) => (
             <li
               key={product.id}
-              className="flex flex-col place-items-center basis-auto shrink-0 py-2 px-2 self-start snap-center snap-always"
+              className="flex flex-col place-items-center basis-auto shrink-0 py-10 px-2 self-start snap-center snap-always"
             >
-              <h2 className="self-start w-50 h-15 font-bold">
+              <h2 className="self-start font-bold">
                 {product.title}
               </h2>
               <Image
@@ -36,7 +34,7 @@ const CategoriesCheckOut = () => {
                 width={200}
                 height={200}
                 alt={product.title}
-                className="w-50 bg-light-grey h-75 object-cover"
+                className="w-50 h-75 object-cover"
               />
               <div className="flex flex-row gap-15 self-stretch justify-between">
                 <p className="self-start">
@@ -51,17 +49,6 @@ const CategoriesCheckOut = () => {
                 <p className="self-end">
                   {product.price}$
                 </p>
-              </div>
-              <div
-                className="self-start my-2 hover:rounded-full hover:cursor-pointer hover:border-[#630850] hover:border-2 p-1"
-                onClick={() =>
-                  removeAddedToCart(product.id)
-                }
-              >
-                <FaTrashCan
-                  size={15}
-                  color="#630850"
-                ></FaTrashCan>
               </div>
             </li>
           ))}

@@ -39,7 +39,7 @@ const ProductCard = ({
           src={imgsrc}
           width={400}
           height={450}
-          alt="Kitty cat"
+          alt={title}
         />
         <div className="flex justify-between absolute bottom-0 right-0 left-0">
           {discount > 0 && (

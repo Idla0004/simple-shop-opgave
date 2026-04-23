@@ -22,7 +22,7 @@ const Images = ({
         src={bigImg}
         width={700}
         height={750}
-        alt="Kitty cat"
+        alt="Product image 1"
       ></Image>
       <div className="flex gap-4">
         <Image
@@ -33,7 +33,7 @@ const Images = ({
           src={imagesource0}
           width={400}
           height={450}
-          alt="Kitty cat"
+          alt="Product image 2"
         ></Image>
         <div className="flex flex-col gap-4">
           <Image
@@ -44,7 +44,7 @@ const Images = ({
             src={imagesource1}
             width={400}
             height={450}
-            alt="Kitty cat"
+            alt="Product image 3"
           ></Image>
           <Image
             onClick={() =>
@@ -54,7 +54,7 @@ const Images = ({
             src={imagesource2}
             width={400}
             height={450}
-            alt="Kitty cat"
+            alt="Product image 4"
           ></Image>
         </div>
       </div>

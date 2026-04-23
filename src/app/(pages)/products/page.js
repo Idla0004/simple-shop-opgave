@@ -12,7 +12,9 @@ export default function ProductsPage({
       <main className="flex-1 py-10 px-16 bg-[#E4DFD3]">
         <div className="relative top-40 pb-25">
           <Suspense
-            fallback={<div>Indlæser...</div>}
+            fallback={
+              <div>Loading products...</div>
+            }
           >
             <ProductList
               searchParams={searchParams}

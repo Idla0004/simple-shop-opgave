@@ -43,7 +43,7 @@ const categories = [
   },
 ];
 
-export default function CategoriesIndexTest() {
+export default function CategoriesIndex() {
   return (
     <section className="flex flex-col items-center justify-center">
       <h2 className="uppercase text-2xl text-dark-font font-semibold">

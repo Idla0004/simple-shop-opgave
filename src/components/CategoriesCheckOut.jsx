@@ -30,7 +30,7 @@ const CategoriesScroll = () => {
                 {product.title}
               </h2>
               <Image
-                src={product.imgsrc}
+                src={product.image}
                 width={200}
                 height={200}
                 alt={product.title}

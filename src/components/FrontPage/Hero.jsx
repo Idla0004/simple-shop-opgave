@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
           <div className="row-start-4">
             <Link href="/products">
-              <button className="bg-blue text-[20px] font-semibold uppercase py-2 px-9 mt-10 text-dark-font cursor-pointer">
+              <button className="bg-blue text-[20px] font-semibold uppercase py-2 px-9 mt-10 text-dark-font cursor-pointer hover:bg-[#C4F4FF]">
                 Go To Categories
               </button>
             </Link>
@@ -38,7 +38,7 @@ const Hero = () => {
           width={800}
           height={800}
           alt="Womens handbag black"
-          className="size-full object-cover bg-[#D0CFCB]"
+          className="size-full object-cover bg-light-grey"
         />
       </div>
     </section>

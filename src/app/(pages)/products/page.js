@@ -9,7 +9,7 @@ export default function ProductsPage({
   return (
     <div className="flex items-start">
       <SideBarNavigation />
-      <main className="flex-1 py-10 px-16 bg-[#E4DFD3]">
+      <main className="flex-1 py-10 px-16 bg-background">
         <div className="relative top-40 pb-25">
           <Suspense
             fallback={

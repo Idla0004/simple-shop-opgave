@@ -3,7 +3,6 @@ import {
   Mulish,
 } from "next/font/google";
 import "./globals.css";
-import "./local.css";
 import Header from "@/components/LayoutComponents/Header";
 import Footer from "@/components/LayoutComponents/Footer";
 

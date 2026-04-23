@@ -6,11 +6,16 @@ const useAddedProducts = create(
     (set, get) => ({
       addedtocart: [],
 
-      setAddedToCart: (id) =>
+      setAddedToCart: (id, image, title, price) =>
         set((state) => ({
           addedtocart: [
             ...state.addedtocart,
-            { id: id },
+            {
+              id: id,
+              image: image,
+              title: title,
+              price: price,
+            },
           ],
         })),
       removeAddedToCart: (id) =>

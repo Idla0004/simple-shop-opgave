@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const CategoriesScroll = () => {
   const { addedtocart } = useAddedProducts();
+
   return (
     <section className="pt-8 px-3 flex flex-col items-center justify-center w-full overflow-clip">
       <h2 className="lowercase text-2xl self-start font-semibold">
@@ -29,10 +30,10 @@ const CategoriesScroll = () => {
                 {product.title}
               </h2>
               <Image
-                src={product.thumbnail}
+                src={product.imgsrc}
                 width={200}
                 height={200}
-                alt="cat"
+                alt={product.title}
                 className="w-50 h-75 object-cover"
               />
               <div className="flex flex-row gap-15 self-stretch justify-between">
@@ -46,7 +47,7 @@ const CategoriesScroll = () => {
                   price
                 </p>
                 <p className="self-end">
-                  219.25,-
+                  {product.price}$
                 </p>
               </div>
             </li>

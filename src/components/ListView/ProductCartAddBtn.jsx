@@ -26,7 +26,7 @@ const ProductCardAddBtn = ({ product }) => {
         onClick={handleClick}
         disabled={isAdded}
         className={`bg-foreground py-1 px-2 text-light-font text-[20px] z-1 hover:bg-background hover:text-foreground cursor-pointer active:px-2.5 active-py-1.5 ${
-          isAdded ? "bg-blue-500" : ""
+          isAdded ? "bg-blue" : ""
         }`}
       >
         {buttonText}

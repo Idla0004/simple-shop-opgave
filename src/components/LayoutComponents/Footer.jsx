@@ -5,7 +5,7 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-wrap gap-4 items-center justify-evenly bg-[#2D2D2D] py-20 px-4 z-1">
+    <footer className="flex flex-wrap gap-4 items-center justify-evenly bg-foreground py-20 px-4 z-1">
       <div className="logo-and-icons">
         <img
           src="/img/KOEBblue.png"
@@ -13,14 +13,14 @@ const Footer = () => {
           className="max-w-20 cursor-pointer"
         />
         <div className="flex justify-between my-4">
-          <div className="bg-[#99D2DF] p-1 rounded-full">
+          <div className="bg-blue p-1 rounded-full">
             <FaFacebookF
               size={25}
               color="#2D2D2D"
               className="cursor-pointer"
             />
           </div>
-          <div className="bg-[#99D2DF] p-1 rounded-full">
+          <div className="bg-blue p-1 rounded-full">
             <FaInstagram
               size={25}
               color="#2D2D2D"

@@ -37,7 +37,7 @@ const ProductCard = ({
               </p>
             )}
           </div>
-          <div className="rounded-full bg-(--color-background) p-2 mt-2 mr-2">
+          <div className="rounded-full bg-background p-2 mt-2 mr-2">
             <FaRegHeart
               size={30}
               color="#630850"

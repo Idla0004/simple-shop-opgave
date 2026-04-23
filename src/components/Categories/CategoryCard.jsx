@@ -11,7 +11,7 @@ export default function CategoryCard({
     <Link href={`/products?category=${slug}`}>
       <div className="h-90">
         <Image
-          className="rounded-full bg-dark-grey"
+          className="rounded-full bg-light-grey"
           src={imgsrc}
           width={250}
           height={250}

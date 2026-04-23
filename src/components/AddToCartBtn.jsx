@@ -15,7 +15,7 @@ const AddToCartBtn = ({ product }) => {
         onClick={() => {
           setAddedToCart(
             product.id,
-            product.imgsrc,
+            product.images[0],
             product.title,
             product.price,
           );

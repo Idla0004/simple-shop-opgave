@@ -16,7 +16,7 @@ export default function CategoryCard({
         height={250}
         alt={title}
       />
-      <p className="mt-5 text-center text-s">
+      <p className="mt-5 text-center text-m font-bold">
         {title}
       </p>
     </Link>

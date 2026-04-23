@@ -35,7 +35,7 @@ const Header = () => {
           </button>
           <input
             type="search"
-            name="query"
+            name="tags"
             className="outline-none focus:border-dark-font"
             placeholder="Search products..."
           />

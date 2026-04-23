@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
             height={350}
             alt="Logo"
             loading="eager"
-            className="row-start-2 "
+            className="row-start-2"
           />
           <p className="row-start-3 text-[18px] text-light-font text-pretty max-w-115 mt-6">
             Your premium destination for fashion.
@@ -23,9 +24,11 @@ const Hero = () => {
             view more.
           </p>
           <div className="row-start-4">
-            <button className="bg-blue text-[20px] font-semibold uppercase py-2 px-9 mt-10 text-dark-font cursor-pointer">
-              Go To Categories
-            </button>
+            <Link href="/products">
+              <button className="bg-blue text-[20px] font-semibold uppercase py-2 px-9 mt-10 text-dark-font cursor-pointer">
+                Go To Categories
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -34,7 +37,7 @@ const Hero = () => {
           src="https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/1.webp"
           width={800}
           height={800}
-          alt="Kitty cat"
+          alt="Womens handbag black"
           className="size-full object-cover"
         />
       </div>

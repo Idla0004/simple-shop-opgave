@@ -15,7 +15,10 @@ const Single = ({ params }) => {
   );
 };
 
-const Details = async ({ params }) => {
+const Details = async ({
+  params,
+  setAddedToCart,
+}) => {
   const { id } = await params;
 
   const response = await fetch(
@@ -96,7 +99,11 @@ const Details = async ({ params }) => {
               </select>
             </div>
           </div>
-          <AddToCartBtn id={id}></AddToCartBtn>
+          <AddToCartBtn
+            setAddedToCart={setAddedToCart}
+            id={id}
+            product={product}
+          ></AddToCartBtn>
           <div className="my-4">
             <div className="my-4">
               <h3 className="mb-2">

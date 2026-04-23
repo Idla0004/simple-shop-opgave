@@ -1,10 +1,10 @@
 "use client";
 import useAddedProducts from "@/store/addedtocart";
 
-const AddToCartBtn = ({ id }) => {
-  const { addedtocart, setAddedToCart } =
-    useAddedProducts();
-  /*   if (
+const AddToCartBtn = ({ product }) => {
+  const { setAddedToCart } = useAddedProducts();
+
+  /* if (
     addedtocart.some(
       (addedtocart) => addedtocart.id === id,
     )
@@ -13,7 +13,12 @@ const AddToCartBtn = ({ id }) => {
     <div className="flex justify-center max-w-130 my-8">
       <button
         onClick={() => {
-          setAddedToCart(id);
+          setAddedToCart(
+            product.id,
+            product.imgsrc,
+            product.title,
+            product.price,
+          );
         }}
         className="cursor-pointer bg-pink text-blue font-bold font-poppins w-60 h-12 rounded-lg"
       >
